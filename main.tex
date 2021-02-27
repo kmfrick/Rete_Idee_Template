@@ -1,0 +1,94 @@
+\documentclass[a4paper, 12pt]{article} 
+% Footnotes are automatically 10pt using 12pt article
+% Use \small for extended quotes
+\usepackage[margin=2cm]{geometry} 
+\usepackage[italian]{babel} 
+\usepackage{amsmath} 
+\usepackage[backend=biber, bibencoding=utf8, style=authoryear, citestyle=authoryear]{biblatex}
+\usepackage{graphicx} 
+\usepackage{hyperref} 
+\usepackage[italian]{cleveref} 
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{ccicons}
+\usepackage{indentfirst}
+
+\title{Template elaborati Rete di Idee} 
+\author{} 
+\newcommand{\school}{Scuola Superiore di Studi Stupendi}
+\newcommand{\class}{Classe di Scienze delle Merendine}
+\date{2021} 
+
+\bibliography{main}
+\newrobustcmd*{\citep}[1]{(\cite{#1})} 
+
+% Paragraph spacing
+\setlength{\parskip}{1.5pt}
+
+
+
+% Title format
+\makeatletter
+\def\@maketitle{
+  \newpage
+{
+  \centering
+
+\Large\textbf{{\@title}} % Large = 17.28pt with 12pt article class
+
+\vspace{1em}
+
+\school
+
+\vspace{1em}
+
+\class
+
+\vspace{1em}
+
+} 
+
+}
+\makeatother
+
+
+\begin{document} 
+% Headings format
+\titleformat*{\section}{\bfseries} % Bold, not bigger
+\titleformat*{\subsection}{} % Not bold, not bigger
+% Do not use \subsubsection!
+\maketitle 
+\section{Abstract} 
+
+Lorem ipsum dolor sit amet.
+
+\emph{Keywords}: ci, sono, tante, parole, chiave
+
+\section{Introduzione}
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique massa non turpis finibus, ut congue mauris condimentum. Quisque vitae purus quis nibh faucibus tristique. In enim metus, accumsan sit amet rutrum eget, rhoncus at lectus. Phasellus ut mauris imperdiet, sagittis sapien eget, varius justo. Sed fermentum feugiat purus. Morbi fringilla, leo id luctus dignissim, enim diam dignissim sapien, sed vehicula quam urna sed nibh. In hac habitasse platea dictumst. Pellentesque vitae condimentum urna, ac interdum felis. Vestibulum nec commodo quam.
+
+Proin a nulla sit amet lacus congue pretium. Mauris eleifend turpis sed ante malesuada vestibulum. Fusce justo diam, gravida nec erat ac, eleifend convallis sem. Quisque volutpat maximus lacus in congue. Curabitur id mauris suscipit, efficitur eros ac, aliquet lectus. Etiam vehicula dictum tortor non mattis. Phasellus a pulvinar sapien, ut mattis est. Praesent suscipit eu ligula non blandit. Nam accumsan ligula lacinia auctor pharetra. Nullam sed ex ornare, ullamcorper diam vitae, euismod metus. Nam efficitur, lorem a ornare tempor, elit felis vehicula dui, sit amet cursus metus sapien eget nibh. Cras maximus arcu in lorem accumsan sodales. Duis in tristique metus, at eleifend dui. Mauris placerat orci eget molestie posuere. Maecenas efficitur vitae lectus sed dapibus.
+
+Nulla pulvinar mauris in nunc sodales, id posuere libero bibendum. Morbi quis mauris a ante luctus vulputate. Morbi a neque aliquam turpis rhoncus posuere ut sed lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer turpis nulla, malesuada a imperdiet at, condimentum porta lacus. Quisque nec imperdiet felis, vel tristique quam. Donec maximus massa sed lorem cursus, et aliquam enim blandit.
+
+\subsection{Sottointroduzione}
+
+Suspendisse fermentum tortor quis mauris finibus, eget congue purus sollicitudin. Vivamus massa purus, gravida in venenatis eget, facilisis sit amet lorem. Mauris non iaculis turpis. Phasellus viverra lorem in purus iaculis, at maximus tortor fermentum. Phasellus malesuada ligula vel porta porttitor. Nunc ultrices consectetur lacus, ut tempus eros consequat sit amet. Morbi quis massa nunc. Integer ut iaculis metus, vitae suscipit tellus. Integer vitae varius dolor. Cras vel quam dictum sapien egestas commodo eget varius erat. Aliquam hendrerit tincidunt purus vitae eleifend. Mauris ac augue sollicitudin arcu imperdiet efficitur ac sed augue. Nulla euismod sodales ligula, ac fringilla elit rutrum in. In et magna vel ipsum sollicitudin lacinia id non magna. Vivamus id pellentesque tellus.
+
+\section{Conclusione}
+
+Cras leo risus, efficitur ac scelerisque eu, semper in libero. Praesent suscipit consequat mauris, in ornare est finibus ut. Cras scelerisque tempus risus imperdiet tempor. Maecenas gravida odio felis, in commodo urna efficitur quis. Nullam mattis gravida eros ac ullamcorper. Aenean finibus tempor sapien, sed fermentum ligula lobortis sed. Mauris lobortis neque non vulputate faucibus. Aliquam diam neque, mollis sit amet faucibus auctor, porta sed nisl. Integer eget arcu ex. Cras pulvinar risus sit amet interdum tincidunt. Nulla ac diam massa. Cras pharetra vel ligula quis rhoncus. Sed viverra, nulla ut sodales lobortis, lacus lorem dapibus nisl, nec placerat mauris metus et purus. Integer magna velit, volutpat sit amet bibendum euismod, scelerisque sed massa. Maecenas quis consectetur arcu.
+
+\nocite{*}
+
+\printbibliography 
+
+\section*{Licenza}
+
+Questo documento è rilasciato sotto licenza CC-BY-NC-ND. \ccbyncnd
+
+\end{document} 
